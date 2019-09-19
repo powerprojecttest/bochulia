@@ -1,0 +1,249 @@
+html, body {
+   
+    overflow-x: hidden;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+
+
+#main_cont{
+max-width:85vw;
+}
+
+#main_cont_1{
+width:90vw;
+}
+
+.header__logo{
+border-bottom: 1px solid rgba(255, 0, 0, .0);
+
+
+}
+
+#mask {
+position: absolute;
+bottom:-1px;
+        right:1px;
+        width:50%;
+        height: 1px;
+        background-color:#fff;
+
+}
+
+.galery_main{
+width:320px !important; 
+
+
+}
+
+.galery_main1{
+width:320px !important; 
+
+
+}
+
+#rw
+{
+width:280px !important; 
+}
+.photo__about-me1{
+width:100% !important;
+float:left; 
+}
+
+.cont{
+height:100vh;	
+}
+
+.wrapper__header__main{
+	background: url(../img/imgboch/backgroundone.png) no-repeat center;
+    background-size: cover;
+height:100vh;
+}
+.wrapper__header__about{
+	background: url(../img/imgboch/backgroundtwo.png) no-repeat center;
+    background-size: cover;
+	height:100vh;
+}
+.header__logo h1{
+   /* width: 417px;
+    height: 31px;*/
+	margin-bottom:20px;
+	margin-top:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 31px;
+    color: white;
+    text-align: center;
+    
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+.header__logo h1{
+  /* put your css styles in here */
+	margin-bottom:20px;
+	margin-top:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px !important;
+    line-height: 31px;
+    color: white;
+    text-align: center;
+}
+
+#main_cont{
+max-width:100vw;
+padding-left:0px !important;
+margin-left:0px !important;
+margin-right:10px !important;
+
+
+}
+
+.cont{
+
+}
+
+.wrapper__header__main{
+	background: url(../img/imgboch/backgroundone.png) no-repeat center;
+    background-size: cover;
+height:100% !important;
+
+}
+.wrapper__header__about{
+	background: url(../img/imgboch/backgroundtwo.png) no-repeat center;
+    background-size: cover;
+height:100% !important;
+}
+	
+}
+
+@media all and (min-width:0px) and (max-width: 420px) {
+.header__logo h1{
+  /* put your css styles in here */
+	margin-bottom:20px;
+	margin-top:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px !important;
+    line-height: 31px;
+    color: white;
+    text-align: center;
+}
+
+.wrapper__header__main{
+	background: url(../img/imgboch/backgroundone.png) no-repeat center;
+    background-size: cover;
+height:100% !important;
+
+}
+.wrapper__header__about{
+	background: url(../img/imgboch/backgroundtwo.png) no-repeat center;
+    background-size: cover;
+height:100% !important;
+}
+}
+
+.button_mainpage{
+margin-top:20px;
+    
+}
+.button__message{
+    background-color: Transparent;
+    cursor:pointer;
+    border: 1px solid white;
+    font: inherit;
+    color: white;
+    width: 191px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 31px;
+}
+.photo{
+    border-radius: 25px;
+    margin-top: 30px;
+    z-index: 1;
+    width: 100%;
+
+}
+.photo__about-me, .photo__design-office, .photo__design-tell, .photo__design-premium, .photo__family-traveler, .photo__project-manager, .photo__playman{
+    position: relative;
+    width: 290px;
+    
+
+}
+.photoblock_indark{
+    position: absolute; 
+    bottom: 0;
+	left:0;
+	width: 100%;
+	height: auto;
+    border-radius: 25px;
+}
+.photo__line{
+    width: 100px;
+}
+.darkgreen, .lightgreen, .darkfiolet, .pastel{
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #001B0F;
+    opacity: 0.8;
+    z-index: 2;
+    border-radius: 0 0 25px 25px;
+}
+.lightgreen{
+	background: #023B47;
+}
+.darkfiolet{
+	background: #090924;
+}
+.pastel{
+	background: #35271C;
+}
+.photo__text{
+    z-index: 3;
+    color: white;
+    align-items: center;
+}
+.photo__number{
+    align-items: center;
+    width: 30%;
+}
+.flex-container {
+    display: flex;
+}
+.photo__line{
+    width: 70px;
+    padding-top: 10px;
+}
+.photo__myself{
+    margin: 10px;
+
+}

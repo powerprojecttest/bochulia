@@ -1,0 +1,124 @@
+#logo a {   
+     display: block
+}
+#logo img {    
+    width: 30%;    max-width: 276px;
+}
+
+.wrapper__header{
+	background: url(../img/img/background_lending.png) no-repeat center;
+    /*background-size: contain;*/
+    background-size: 1024px 768px;
+}
+
+#rotateText{
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: left top;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+
+    top: 0;
+    left: 100%;
+    white-space: nowrap;   
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+}
+.header__text{
+    color: black;
+}
+.header__text11{
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+.header__text12{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.header__text22{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+.line__order{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+.header__text-txt{
+    padding-bottom:100px; 
+}
+.line__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+.header__tell{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+.keyboard__ru{
+    padding-right: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.keyboard__en{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+p{
+    margin-bottom: 0px;
+}
+hr{
+    width: 210px;
+    text-align: left;
+    border-top: 1px solid #000000;
+    margin: 0px 0px 10px 0px;
+}
+.number1, .number2, .number3{
+    text-align: right;
+    width: 210px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-top: -20px;
+
+}
+.wrapper__aboutus{
+	background: url(../img/img/background_priority.png)no-repeat center;
+	background-size: cover;
+}

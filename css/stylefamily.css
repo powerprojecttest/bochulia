@@ -1,0 +1,37 @@
+.cont{
+    padding: 0;
+}
+.wrapper__header__family{
+    /*background: url(../img/imgboch/backgroundtwo.png) no-repeat center;*/
+    background: #ffffff;
+    width: 100%;
+
+}
+.twoblock__family{
+    background: #E5E5E5;
+}
+.text__family-title{
+    left: 6.6%;
+    right: 44.58%;
+    top: 33.38%;
+    bottom: 55.82%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    font-size: 64px;
+    line-height: 80px;
+    padding-top: 20%;
+}
+.left__text__design, .textp_design{
+    text-align: left;
+    padding-left: 130px;
+    color: #000000;
+}
+.line__uppertext{
+    color: #000000;
+}
+.threeblock__family{
+    background: #002706;
+}

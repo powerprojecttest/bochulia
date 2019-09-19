@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bochulya </title>
+        <meta name="description" content="Bochulya">
+        <meta name="keywords" content="Bochulya">
+
+        
+       
+        <link rel="stylesheet" href="css/styleb.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </head>
+    <body>
+        <section class=" cont probootstrap-section">
+            <div class='container-fluid wrapper__header__main'> 
+                <div class="row text-center mb100">
+
+                    
+                </div>
+<div id="main_cont" class="container-fluid">
+                <div class="row ">
+                    
+                    <div class="owl-carousel owl-theme">
+                    <div id="touchsurface" class="col-sm galery_main">
+                       <div  class="photo__about-me "><a href="./semejnij_putesh.htm"><img class="photo" src="img/imgboch/family-traveler.png" alt="Обо мне">
+                        <div class=" photoblock_indark">
+                            <div class=" darkgreen">
+                                <div class="flex-container photo__text">
+                                    <div class="photo__number">01<hr class="photo__line"></div> 
+                                    <div class="photo__myself">Семейный путешественник</div></div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </a>        
+                    </div>
+
+
+                    <div class="col-sm galery_main">
+                            <div class="photo__design-office"><img class="photo" src="img/imgboch/project-manager.png" alt="Дизайн офисов">
+                             <div class=" photoblock_indark">
+                                 <div class=" lightgreen">
+                                     <div class="flex-container photo__text">
+                                         <div class="photo__number">02<hr class="photo__line"></div> 
+                                         <div class="photo__myself">Руководитель проектов</div></div> 
+                                     </div>
+                                 </div>
+                             </div>         
+                         </div>
+
+                     <div class="col-sm galery_main">
+                         <div class="photo__design-tell"><a href="#"><img class="photo" src="img/imgboch/playman.png" alt="Дизайн телеканалов">
+                             <div class=" photoblock_indark">
+                                <div class=" darkfiolet">
+                                     <div class="flex-container photo__text">
+                                        <div class="photo__number">03<hr class="photo__line"></div> 
+                                        <div class="photo__myself">Массовик затейник</div>
+                                    </div> 
+                                 </div>
+                                </div>
+                         </div></a>         
+                     </div>     
+                     
+                    
+</div>
+
+                </div>
+            </div>
+</div>
+        </section>
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+<script>
+
+ 
+window.addEventListener('load', function(){
+ 
+    var touchsurface = document.getElementById('touchsurface'),
+        startX,
+        startY,
+        dist,
+        threshold = 50, //required min distance traveled to be considered swipe
+        allowedTime = 300, // maximum time allowed to travel that distance
+        elapsedTime,
+        startTime
+ 
+    function handleswipe(isrightswipe){
+        if (isrightswipe)
+		window.location.href = 'https://powersite.com.ua/new/test/bochulia/about.htm';
+            //touchsurface.innerHTML += 'Congrats, you\'ve made a <span style="color:red">right swipe!</span>'
+		
+        else{
+            touchsurface.innerHTML += 'Condition for right swipe not met yet'
+        }
+    }
+ 
+    touchsurface.addEventListener('touchstart', function(e){
+        //touchsurface.innerHTML = ''
+        var touchobj = e.changedTouches[0]
+        dist = 0
+        startX = touchobj.pageX
+        startY = touchobj.pageY
+        startTime = new Date().getTime() // record time when finger first makes contact with surface
+        //e.preventDefault()
+    }, false)
+ 
+   // touchsurface.addEventListener('touchmove', function(e){
+   //     e.preventDefault() // prevent scrolling when inside DIV
+   // }, false)
+ 
+    touchsurface.addEventListener('touchend', function(e){
+        var touchobj = e.changedTouches[0]
+        dist = touchobj.pageX - startX // get total dist traveled by finger while in contact with surface
+        elapsedTime = new Date().getTime() - startTime // get time elapsed
+        // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
+        var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
+        handleswipe(swiperightBol)
+        //e.preventDefault()
+    }, false)
+ 
+}, false)
+console.log(touchsurface.innerHTML); // end window.onload
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+	 navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },            
+        960:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+//var timestamp_mousewheel = 0;
+//owl.on('mousewheel', '.owl-stage', function (e) {
+//var d = new Date();
+//if((d.getTime() - timestamp_mousewheel) > 2000){
+//timestamp_mousewheel = d.getTime();
+// console.log(timestamp_mousewheel);
+//    console.log(e.deltaY);
+//    if (e.deltaY>0) {
+//        owl.trigger('next.owl');
+//    } else {
+//        owl.trigger('prev.owl');
+//    }
+// }  
+//});
+ </script>
+    </body>
+</html>
+    
